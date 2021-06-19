@@ -61,7 +61,8 @@ button{
     border-radius: 30px;
 
     background-color: hsl(0, 0%, 95%);
-    border: unset;
+    border:           solid;
+    border-color:     hsl(0, 0%, 95%);
 
     font-family: 'Lexend Deca', sans-serif;
 }
