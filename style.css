@@ -78,16 +78,16 @@ button{
 }
 /*hover*/
 .btn-suvs:hover{
-    border:         3px, solid,hsla(0, 0%, 100%, 0.75);
+    border:         3px, solid,hsl(184, 100%, 22%);
     color:                     hsla(0, 0%, 100%, 0.75) ;
     background-color:          hsl(184, 100%, 22%);
 }
 .btn-sedans:hover{
-    border:         3px, solid,hsla(0, 0%, 100%, 0.75);
+    border:         3px, solid,hsl(184, 100%, 22%);
     color:                     hsla(0, 0%, 100%, 0.75) ;
     background-color:          hsl(31, 77%, 52%);
 }.btn-luxury:hover{
-    border:         3px, solid,hsla(0, 0%, 100%, 0.75);
+    border:         3px, solid,hsl(184, 100%, 22%);
     color:                     hsla(0, 0%, 100%, 0.75) ;
     background-color:          hsl(179, 100%, 13%);
 }
@@ -123,7 +123,6 @@ button{
         margin-top: -50px;
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
-        border-top-right-radius: 0px;
 
     }
 }
