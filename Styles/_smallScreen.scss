@@ -1,6 +1,19 @@
-body{
-    .main-box{
-        display: flex;
-        flex-direction: column;
+@media screen and (max-width: 810px) {
+    body {
+        .main-box {
+            display: flex;
+            flex-direction: column;
+
+            .sedans{
+                border-top-right-radius: 20px;
+                border-bottom-left-radius: 0px;
+            }
+
+            .luxury{
+                border-top-right-radius: 0px;
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+            }
+        }
     }
 }

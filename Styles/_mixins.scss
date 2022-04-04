@@ -10,7 +10,8 @@
     border-color: hsl(0, 0%, 95%);
 
     font-family: "Lexend Deca", sans-serif;
-    :hover {
+    &:hover { 
+        //If you want to call another class or pseudo element inside a selector with scss, you have to use the & symbol.
         border: 3px, solid;
         color: hsla(0, 0%, 100%, 0.75);
         background-color: $bg-Color;
