@@ -1,0 +1,18 @@
+@mixin button($bg-Color) {
+    width: 150px;
+    height: 50px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    border-radius: 30px;
+
+    background-color: hsl(0, 0%, 95%);
+    border: solid;
+    border-color: hsl(0, 0%, 95%);
+
+    font-family: "Lexend Deca", sans-serif;
+    :hover {
+        border: 3px, solid;
+        color: hsla(0, 0%, 100%, 0.75);
+        background-color: $bg-Color;
+    }
+}

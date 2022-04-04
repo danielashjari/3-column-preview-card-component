@@ -1,0 +1,38 @@
+body {
+    background-color: $bg;
+    font-size: 15px;
+    .main-box {
+        .sedans {
+            background-color: $bg-sedans;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            height: 400px;
+
+            button {
+                @include button($bg-sedans);
+            }
+        }
+
+        .suvs {
+            background-color: $bg-suvs;
+            border-bottom: 20px;
+            border-top: 20px;
+            height: 400px;
+
+            button {
+                @include button($bg-suvs);
+            }
+        }
+
+        .luxury {
+            background-color: $bg-luxury;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            height: 400px;
+
+            button {
+                @include button($bg-luxury);
+            }
+        }
+    }
+}
