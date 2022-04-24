@@ -1,3 +1,6 @@
+@use "./mixins";
+@use "./basic" as *;
+
 body {
     background-color: $bg;
     font-size: 15px;
@@ -15,7 +18,7 @@ body {
             height: 400px;
 
             button {
-                @include button($bg-sedans);
+                @include mixins.button($bg-sedans);
             }
         }
 
@@ -26,7 +29,7 @@ body {
             height: 400px;
 
             button {
-                @include button($bg-suvs);
+                @include mixins.button($bg-suvs);
             }
         }
 
@@ -37,7 +40,7 @@ body {
             height: 400px;
 
             .btn-luxury {
-                @include button($bg-luxury);
+                @include mixins.button($bg-luxury);
             }
         }
     }
