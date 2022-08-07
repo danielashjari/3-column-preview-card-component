@@ -1,121 +1,114 @@
-html,
-body,
-ul,
-ol {
-  margin: 0;
-  padding: 0;
-  font-weight: 0;
+:root {
+  --bg-sedans: hsl(31, 77%, 52%);
+  --bg-suvs: hsl(184, 100%, 22%);
+  --bg-luxury: hsl(179, 100%, 13%);
+  --bg: hsl(0, 0%, 95%);
+  --p-t: hsla(0, 0%, 100%, 0.75);
+  --h-t: hsl(0, 0%, 95%);
 }
 
-body p {
-  color: hsla(0deg, 0%, 100%, 0.75);
-  max-width: 200px;
-  margin-left: 60px;
-  margin-right: 60px;
-  margin-bottom: 50px;
-  font-weight: 400;
-  font-family: "Lexend Deca", sans-serif;
-}
-body h2 {
-  color: hsl(0deg, 0%, 95%);
-  max-width: 200px;
-  margin-left: 60px;
-  margin-top: 50px;
-  margin-right: 60px;
-  font-weight: 700;
-  font-family: "Big Shoulders Display", cursive;
+html {
+  font-size: 100%;
+  box-sizing: border-box;
 }
 
 body {
-  background-color: hsl(0deg, 0%, 95%);
-  font-size: 15px;
-}
-body .main-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 9%;
-  margin-bottom: 9%;
-}
-body .main-box .sedans {
-  background-color: hsl(31deg, 77%, 52%);
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-  height: 400px;
-}
-body .main-box .sedans button {
-  width: 150px;
-  height: 50px;
-  margin-left: 20px;
-  margin-bottom: 10px;
-  border-radius: 30px;
-  background-color: hsl(0deg, 0%, 95%);
-  border: solid;
-  border-color: hsl(0deg, 0%, 95%);
-  font-family: "Lexend Deca", sans-serif;
-}
-body .main-box .sedans button:hover {
-  border: 3px, solid;
-  color: hsla(0deg, 0%, 100%, 0.75);
-  background-color: hsl(31deg, 77%, 52%);
-}
-body .main-box .suvs {
-  background-color: hsl(184deg, 100%, 22%);
-  border-bottom: 20px;
-  border-top: 20px;
-  height: 400px;
-}
-body .main-box .suvs button {
-  width: 150px;
-  height: 50px;
-  margin-left: 20px;
-  margin-bottom: 10px;
-  border-radius: 30px;
-  background-color: hsl(0deg, 0%, 95%);
-  border: solid;
-  border-color: hsl(0deg, 0%, 95%);
-  font-family: "Lexend Deca", sans-serif;
-}
-body .main-box .suvs button:hover {
-  border: 3px, solid;
-  color: hsla(0deg, 0%, 100%, 0.75);
-  background-color: hsl(184deg, 100%, 22%);
-}
-body .main-box .luxury {
-  background-color: hsl(179deg, 100%, 13%);
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-  height: 400px;
-}
-body .main-box .luxury .btn-luxury {
-  width: 150px;
-  height: 50px;
-  margin-left: 20px;
-  margin-bottom: 10px;
-  border-radius: 30px;
-  background-color: hsl(0deg, 0%, 95%);
-  border: solid;
-  border-color: hsl(0deg, 0%, 95%);
-  font-family: "Lexend Deca", sans-serif;
-}
-body .main-box .luxury .btn-luxury:hover {
-  border: 3px, solid;
-  color: hsla(0deg, 0%, 100%, 0.75);
-  background-color: hsl(179deg, 100%, 13%);
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg);
 }
 
-@media screen and (max-width: 810px) {
-  body .main-box {
-    display: flex;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+p {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-size: 0.9375rem;
+  color: var(--p-t);
+}
+
+h2 {
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  color: var(--h-t);
+}
+
+.main-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 9% 5%;
+}
+@media screen and (max-width: 640px) {
+  .main-box {
     flex-direction: column;
   }
-  body .main-box .sedans {
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 0px;
+}
+
+.sedans {
+  background-color: var(--bg-sedans);
+  border-top-left-radius: 1.25rem;
+  border-bottom-left-radius: 1.25rem;
+  height: 25rem;
+  padding: 1.25rem 2.5rem;
+}
+@media screen and (max-width: 640px) {
+  .sedans {
+    border-top-right-radius: 1.25rem;
+    border-bottom-left-radius: 0;
   }
-  body .main-box .luxury {
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+}
+
+.suvs {
+  background-color: var(--bg-suvs);
+  border-bottom: 1.25rem;
+  border-top: 1.25rem;
+  height: 25rem;
+  padding: 1.25rem 2.5rem;
+}
+
+.luxury {
+  background-color: var(--bg-luxury);
+  border-top-right-radius: 1.25rem;
+  border-bottom-right-radius: 1.25rem;
+  height: 25rem;
+  padding: 1.25rem 2.5rem;
+}
+@media screen and (max-width: 640px) {
+  .luxury {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 1.25rem;
+    border-bottom-right-radius: 1.25rem;
   }
+}
+
+button {
+  width: 150px;
+  height: 50px;
+  margin: 20px 0 10px 0;
+  border-radius: 30px;
+  background-color: var(--bg);
+  border: solid;
+  border-color: var(--bg);
+}
+button:hover {
+  border: 3px, solid;
+  color: var(--p-t);
+}
+
+.btn-sedans:hover {
+  background-color: var(--bg-sedans);
+}
+
+.btn-suvs:hover {
+  background-color: var(--bg-suvs);
+}
+
+.btn-luxury:hover {
+  background-color: var(--bg-luxury);
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,28 @@
+button{
+    width: 150px;
+    height: 50px;
+    margin: 20px 0 10px 0;
+    border-radius: 30px;
+
+    background-color: var(--bg);
+    border: solid;
+    border-color: var(--bg);
+
+    &:hover { 
+        //If you want to call another class or pseudo element inside a selector with scss, you have to use the & symbol.
+        border: 3px, solid;
+        color: var(--p-t);
+    }
+}
+
+.btn-sedans:hover {
+    background-color: var(--bg-sedans);
+}
+
+.btn-suvs:hover {
+    background-color: var(--bg-suvs);
+}
+
+.btn-luxury:hover {
+    background-color: var(--bg-luxury);
+}

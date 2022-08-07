@@ -1,0 +1,15 @@
+@use "../util" as*;
+
+.sedans {
+    background-color: var(--bg-sedans);
+    border-top-left-radius: rem(20);
+    border-bottom-left-radius: rem(20);
+    height: rem(400);
+    padding: rem(20) rem(40);    
+
+
+    @media screen and (max-width: 640px){
+        border-top-right-radius: rem(20);
+        border-bottom-left-radius: 0;
+    }
+}
