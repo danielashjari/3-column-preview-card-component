@@ -1,0 +1,16 @@
+@use "../util"as*;
+
+p{
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    font-size: rem(15);
+    color: var(--p-t);
+}
+
+h2{
+    font-family: "Big Shoulders Display", cursive;
+    font-weight: 700;
+//    font-size: ;
+    color: var(--h-t);
+
+}
