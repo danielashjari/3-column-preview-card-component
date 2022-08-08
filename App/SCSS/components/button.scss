@@ -1,7 +1,7 @@
 button{
     width: 150px;
     height: 50px;
-    margin: 20px 0 10px 0;
+    margin: 90px 0 10px 0;
     border-radius: 30px;
 
     background-color: var(--bg);
@@ -15,14 +15,26 @@ button{
     }
 }
 
-.btn-sedans:hover {
-    background-color: var(--bg-sedans);
+.btn-sedans {
+    color: var(--bg-sedans);
+
+    &:hover{
+        background-color: var(--bg-sedans);
+    }
 }
 
-.btn-suvs:hover {
-    background-color: var(--bg-suvs);
+.btn-suvs {
+    color: var(--bg-suvs);
+    
+    &:hover{
+        background-color: var(--bg-suvs);
+    }
 }
 
-.btn-luxury:hover {
-    background-color: var(--bg-luxury);
+.btn-luxury {
+    color: var(--bg-luxury);
+    
+    &:hover{
+        background-color: var(--bg-luxury);
+    }
 }

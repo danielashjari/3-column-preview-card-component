@@ -42,7 +42,8 @@ h2 {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin: 9% 5%;
+  width: 63%;
+  margin: 8% 18.5%;
 }
 @media screen and (max-width: 640px) {
   .main-box {
@@ -52,45 +53,43 @@ h2 {
 
 .sedans {
   background-color: var(--bg-sedans);
-  border-top-left-radius: 1.25rem;
-  border-bottom-left-radius: 1.25rem;
-  height: 25rem;
-  padding: 1.25rem 2.5rem;
+  border-top-left-radius: 0.4375rem;
+  border-bottom-left-radius: 0.4375rem;
+  height: 62%;
+  padding: 3.125rem;
 }
 @media screen and (max-width: 640px) {
   .sedans {
-    border-top-right-radius: 1.25rem;
+    border-top-right-radius: 0.9375rem;
     border-bottom-left-radius: 0;
   }
 }
 
 .suvs {
   background-color: var(--bg-suvs);
-  border-bottom: 1.25rem;
-  border-top: 1.25rem;
-  height: 25rem;
-  padding: 1.25rem 2.5rem;
+  height: 62%;
+  padding: 3.125rem;
 }
 
 .luxury {
   background-color: var(--bg-luxury);
-  border-top-right-radius: 1.25rem;
-  border-bottom-right-radius: 1.25rem;
-  height: 25rem;
-  padding: 1.25rem 2.5rem;
+  border-top-right-radius: 0.4375rem;
+  border-bottom-right-radius: 0.4375rem;
+  height: 62%;
+  padding: 3.125rem;
 }
 @media screen and (max-width: 640px) {
   .luxury {
     border-top-right-radius: 0;
-    border-bottom-left-radius: 1.25rem;
-    border-bottom-right-radius: 1.25rem;
+    border-bottom-left-radius: 0.9375rem;
+    border-bottom-right-radius: 0.9375rem;
   }
 }
 
 button {
   width: 150px;
   height: 50px;
-  margin: 20px 0 10px 0;
+  margin: 90px 0 10px 0;
   border-radius: 30px;
   background-color: var(--bg);
   border: solid;
@@ -101,14 +100,23 @@ button:hover {
   color: var(--p-t);
 }
 
+.btn-sedans {
+  color: var(--bg-sedans);
+}
 .btn-sedans:hover {
   background-color: var(--bg-sedans);
 }
 
+.btn-suvs {
+  color: var(--bg-suvs);
+}
 .btn-suvs:hover {
   background-color: var(--bg-suvs);
 }
 
+.btn-luxury {
+  color: var(--bg-luxury);
+}
 .btn-luxury:hover {
   background-color: var(--bg-luxury);
 }/*# sourceMappingURL=style.css.map */

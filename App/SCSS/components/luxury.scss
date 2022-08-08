@@ -2,15 +2,15 @@
 
 .luxury {
     background-color: var(--bg-luxury);
-    border-top-right-radius: rem(20);
-    border-bottom-right-radius: rem(20);
-    height: rem(400);
-    padding: rem(20) rem(40);    
+    border-top-right-radius: rem(7);
+    border-bottom-right-radius: rem(7);
+    height: 62%;
+    padding: rem(50);    
 
 
     @media screen and (max-width: 640px){
         border-top-right-radius: 0;
-        border-bottom-left-radius: rem(20);
-        border-bottom-right-radius: rem(20);
+        border-bottom-left-radius: rem(15);
+        border-bottom-right-radius: rem(15);
     }
 }
